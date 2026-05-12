@@ -140,9 +140,9 @@ with st.sidebar:
 
     st.markdown("---")
     st.markdown("**Navigation**")
-    st.page_link("streamlit_app.py", label="🏠 Dashboard")
-    st.page_link("pages/1_pipeline.py", label="⚙️ Run Pipeline")
-    st.page_link("pages/2_preview.py", label="📊 Preview Data")
+    st.page_link("Home.py", label="🏠 Ana Sayfa")
+    st.page_link("pages/1_Generate_Delivery_File.py", label="⚙️ Template Oluştur")
+    st.page_link("pages/2_Preview_Optional.py", label="📊 Dosya Önizleme (Opsiyonel)")
     st.markdown("---")
     st.markdown(
         '<span style="font-size:0.72rem; color:#444; font-family:monospace;">'
@@ -164,10 +164,10 @@ st.markdown(
 col1, col2, col3 = st.columns([1, 1, 2])
 with col1:
     if st.button("▶  Run Pipeline", use_container_width=True):
-        st.switch_page("pages/1_pipeline.py")
+        st.switch_page("pages/1_Generate_Delivery_File.py")
 with col2:
     if st.button("📋  Preview Data", use_container_width=True):
-        st.switch_page("pages/2_preview.py")
+        st.switch_page("pages/2_Preview_Optional.py")
 
 st.markdown("<br>", unsafe_allow_html=True)
 
