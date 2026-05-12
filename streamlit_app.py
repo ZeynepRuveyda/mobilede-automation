@@ -140,16 +140,9 @@ with st.sidebar:
 
     st.markdown("---")
     st.markdown("**Navigation**")
-
-    pages = {
-        "🏠 Dashboard": "Home",
-        "⚙️ Run Pipeline": "Pipeline",
-        "📊 Preview Data": "Preview",
-    }
-
-    for label in pages:
-        st.page_link(f"app.py", label=label, disabled=True)
-
+    st.page_link("streamlit_app.py", label="🏠 Dashboard")
+    st.page_link("pages/1_pipeline.py", label="⚙️ Run Pipeline")
+    st.page_link("pages/2_preview.py", label="📊 Preview Data")
     st.markdown("---")
     st.markdown(
         '<span style="font-size:0.72rem; color:#444; font-family:monospace;">'
