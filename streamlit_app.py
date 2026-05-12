@@ -139,11 +139,6 @@ with st.sidebar:
     st.markdown('<div class="sidebar-sub">Automation Suite</div>', unsafe_allow_html=True)
 
     st.markdown("---")
-    st.markdown("**Navigation**")
-    st.page_link("Home.py", label="🏠 Ana Sayfa")
-    st.page_link("pages/1_Generate_Delivery_File.py", label="⚙️ Template Oluştur")
-    st.page_link("pages/2_Preview_Optional.py", label="📊 Dosya Önizleme (Opsiyonel)")
-    st.markdown("---")
     st.markdown(
         '<span style="font-size:0.72rem; color:#444; font-family:monospace;">'
         'v1.0.0 · Mobile.de Automation</span>',
